@@ -7,7 +7,6 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
-  req.accepts('application/json');
   res.render('drums', { title: 'Leap Drums!' });
 });
 
